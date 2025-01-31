@@ -1,0 +1,12 @@
+{
+    "name": "planet-zzhora",
+    "version": "0.0.1",
+    "title": "Planet Zzhora",
+    "author": "rjdunlap",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0.28",
+      "space-age",
+      "any-planet-start >= 1.1.7",
+      "PlanetsLib >= 1.1.38"],
+    "description": "This mod adds in a new planet Zzhora"
+  }

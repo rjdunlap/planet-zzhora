@@ -8,6 +8,7 @@ function MapGen_Zzhora()
     map_gen_setting.property_expression_names =
     {
         elevation = "gleba_elevation",
+        pressure = 1000,
         aux = "gleba_aux",
         moisture = "gleba_moisture",
         temperature = "gleba_temperature",

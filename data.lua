@@ -307,7 +307,7 @@ local zzhora =
     subgroup = "planets",
     surface_properties = {
         ["solar-power"] = 220,
-        ["pressure"] = data.raw["planet"]["vulcanus"].surface_properties["pressure"],
+        ["pressure"] = data.raw["planet"]["gleba"].surface_properties["pressure"],
         ["magnetic-field"] = nauvis.surface_properties["magnetic-field"],
         ["day-night-cycle"] = nauvis.surface_properties["day-night-cycle"],
     },
@@ -416,12 +416,13 @@ data:extend({{
   for _,recipe in pairs (data.raw.recipe) do 
     if recipe.surface_conditions then
       for i, condition in pairs( recipe.surface_conditions ) do
-        if condition.property == "pressure" and condition.min == 2000 then 
+        if condition.property == "pressure" and condition.min == 4000 then
           condition.min = 2000
-          condition.max = 4000
         end
+
       end
     end 
   end 
+
 
 APS.add_planet{name = "zzhora", filename = "__planet-zzhora__/zzhora.lua", technology = "planet-discovery-zzhora"}

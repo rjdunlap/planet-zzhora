@@ -358,7 +358,7 @@ data:extend {{
         },
         {
             type = "unlock-recipe",
-            recipe = "calcium-from-biomatter",
+            recipe = "biocalcite",
           }
     },
     prerequisites = {
@@ -379,7 +379,7 @@ data:extend {{
 
 data:extend({{
     type = "recipe",
-    name = "calcium-from-biomatter",
+    name = "biocalcite",
     category = "organic",
     enabled = false,
     auto_recycle = false,

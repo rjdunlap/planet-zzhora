@@ -1,6 +1,5 @@
 --data.lua
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
-require("zzhora")
 
 --START MAP GEN
 function MapGen_Zzhora()
@@ -388,12 +387,18 @@ data:extend({{
     enabled = false,
     auto_recycle = false,
     energy_required = 12,
+    -- Only craftable on Zzhora (solar-power 220); it was usable on Gleba/Nekohaven.
     surface_conditions =
     {
       {
         property = "pressure",
         min = 2000,
         max = 4000
+      },
+      {
+        property = "solar-power",
+        min = 220,
+        max = 220
       }
     },
     ingredients =
@@ -429,4 +434,7 @@ data:extend({{
   end 
 
 
-APS.add_planet{name = "zzhora", filename = "__planet-zzhora__/zzhora.lua", technology = "planet-discovery-zzhora"}
+-- Any Planet Start is optional.
+if mods["any-planet-start"] then
+    APS.add_planet{name = "zzhora", filename = "__planet-zzhora__/zzhora.lua", technology = "planet-discovery-zzhora"}
+end

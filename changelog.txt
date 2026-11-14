@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 2026-11-13
+  Bugfixes:
+    - When starting on Zzhora, Agriculture and Heating tower no longer require "Planet discovery Gleba" (this locked out the biochamber and so the only calcite source). Their stromatolite mining triggers still apply.
+  Compatibility:
+    - Autoplace controls inherited from Gleba that another mod has removed (for example "gleba_stone" with Angel's mods) are dropped instead of failing the load.
+---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 2026-11-12
   Changes:
